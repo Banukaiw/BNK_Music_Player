@@ -1,7 +1,3 @@
-//const music = new Audio('Dzanum.mp3');
-//music.play(); 
-
-
 
 
 const music = new Audio('Shaheena.mp3');
@@ -72,6 +68,13 @@ Array.from(document.getElementsByClassName('playlistPlay')).forEach((element)=>{
         })
         makeAllBackgrounds();
         Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
+
+        /* while(index<=99){
+            index += 1;
+            music.src = `audio/${index}.mp3`
+            poster_master_play.src = `images/${index}.jpg`;
+            music.play();
+        } */
     });
 }) ;
 
@@ -195,8 +198,23 @@ next.addEventListener('click', ()=>{
     document.getElementById(`${index}`).classList.add('fa-pause');
     makeAllBackgrounds();
     Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
-    
+ 
 })
+
+/* while(index<=99){
+    index += 1;
+    music.src = `audio/${index}.mp3`
+    poster_master_play.src = `images/${index}.jpg`;
+    music.play();
+} */
+
+/*  music.addEventListener('ended', () => {
+    index += 1;
+    if (index > Array.from(document.getElementsByClassName('songItem')).length) {
+        index = 1;
+    }
+    playSong(index);
+});  */
 
 let left_scroll = document.getElementById('left_scroll');
 let right_scroll = document.getElementById('right_scroll');
@@ -219,6 +237,7 @@ left_scrolls.addEventListener('click', ()=>{
 right_scrolls.addEventListener('click', ()=>{
     item.scrollLeft +=330;
 })
+
 
 
 
