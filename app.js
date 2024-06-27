@@ -237,9 +237,33 @@ const songs = [
         poster: "images/12.jpg"
     },
     {
-        id: '13',
-        songName: "Isa<br><div class='subtitle'>KK and Tulsi Kumar</div>",
-        poster: "images/13.jpg"
+        id: '30',
+        songName: "Rawatannepa<br><div class='subtitle'>Romesh Sugathapala</div>",
+        poster: "images/30.jpg"
     },
-   
+    {
+        id: '31',
+        songName: "Oya Lagin<br><div class='subtitle'>Aki Vish</div>",
+        poster: "images/31.jpg"
+    },
+    {
+        id: '32',
+        songName: "Neela Daase Dutuwa<br><div class='subtitle'>Romesh Sugathapala</div>",
+        poster: "images/32.jpg"
+    },
+    {
+        id: '33',
+        songName: "Darkest Hour<br><div class='subtitle'>Iron Maiden</div>",
+        poster: "images/32.jpg"
+    },
+    {
+        id: '34',
+        songName: "Mandaram Eli<br><div class='subtitle'>Bhashi Devanga</div>",
+        poster: "images/34.jpg"
+    },
+    {
+        id: '35',
+        songName: "Roopa sobawata<br><div class='subtitle'>Ranindu</div>",
+        poster: "images/35.jpg"
+    },
 ]
