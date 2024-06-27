@@ -584,10 +584,11 @@ header .song_side .content h1{
 }
 
 header .song_side .content p{
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 400;
     color: #4c5262;
     margin: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header .song_side .content .buttons{
@@ -595,7 +596,7 @@ header .song_side .content .buttons{
 }
 
 header .song_side .content .buttons button{
-    width: 130px;
+    width: 13%;
     height: 30px;
     border: 2px solid #FF4D00;
     outline: none;
@@ -627,10 +628,12 @@ header .song_side .content .buttons button:nth-child(2){
  
 header .song_side .popular_song{
     width: 90%;
-    height: 25%;
-    padding: 12px 7px 12px 12px;
+    height: auto;
     margin: auto;
-    background-color: #4c5267;
+    background-color: #1f2833;
+    padding: 12px 7px 0px 12px;
+      border-radius: 10px;  
+    margin-top: 10px;
    
 }
 
@@ -638,13 +641,15 @@ header .song_side .popular_song{
 header .song_side .popular_song .h4{
     font-size: 25px;
     display: flex;
-    font-family: 'AvantGarde Bold', Arial, sans-serif;;
+    font-family: 'AvantGarde Bold', Arial, sans-serif;
     align-items: center;
     justify-content: space-between;
+    color: #FF4D00;
 }
 
 header .song_side .popular_song .h4 i{
-    color: #a4a8b4;
+    color: #FF4D00;
+    font-size: 20px;
     cursor: pointer;
     transition: .3s linear;
 }
@@ -655,11 +660,12 @@ header .song_side .popular_song .h4 i:hover{
 
 header .song_side .popular_song .pop_song{
     width: 100%;
-    height: 150px;
+    height: auto;
     margin-top: 15px;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    
     
 }
 header .song_side .popular_song .pop_song::-webkit-scrollbar{
@@ -669,11 +675,13 @@ header .song_side .popular_song .pop_song::-webkit-scrollbar{
 
 header .song_side .popular_song .pop_song li{
     
-    min-width: 100px;
-    height: 140px;
+    min-width: auto;
+    height: auto;
     list-style-type: none;
     margin-right: 10px;
     transition: .3s linear;
+    text-align: center;
+    
     
 }
 
@@ -683,26 +691,30 @@ header .song_side .popular_song .pop_song li:hover{
 
 header .song_side .popular_song .pop_song li .img_play{
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    
  
 }
 
 header .song_side .popular_song .pop_song li .img_play img{
     width: 100%;
     height:100%;
+    border-radius: 10px;
 
 }
 
 header .song_side .popular_song .pop_song li .img_play i{
     position: absolute;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     transition: .3s linear;
     opacity: 0;
+    color: #FF4D00;
 
 }
 header .song_side .popular_song .pop_song li .img_play:hover i{
@@ -710,17 +722,62 @@ header .song_side .popular_song .pop_song li .img_play:hover i{
 
 }
 
+.img-area{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.img-area img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-text,
+.img-area:after{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+
+.img-area:after{
+    content: '';
+    height: 100%;
+    top: 0;
+    transition: .5s;
+}
+
+.img-area:hover:after{
+    background: linear-gradient(to bottom, rgba(199,0,57,.25) 25%,rgba(199,0,57,.50)50%,rgba(199,0,57,.75)75%), rgba(199,0,57,.95)100%;
+}
+
+.img-text{
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+    z-index: 1;
+    transform: all .5 cubic-bezier(.13,.62,.81,.91)0s;
+    transform: translateY(145px);
+}
+
+.img-area:hover .img-text{
+        transform: translateY(0);
+}
+
 
 header .song_side .popular_song .pop_song li h5{
     padding: 5px 0px 0px 5px;
     line-height: 15px;
-    font-size: 10px;
+    font-size: 15px;
    
 }
 
 header .song_side .popular_song .pop_song li h5 .subtitle{
-    font-size: 9px;
-    color: #4c5262;
+    font-size: 12px;
+    color: #ffffff;
    
 }
 
@@ -728,9 +785,11 @@ header .song_side .popular_song .pop_song li h5 .subtitle{
 header .song_side .popular_artist{
     width: 90%;
     height: auto;
-    /* border: 1px solid #fff; */
     margin: auto;
     margin-top: 15px;
+    background-color: #1f2833;
+    padding: 12px 7px 10px 12px;
+    border-radius: 10px;
     
    
 }
@@ -740,6 +799,9 @@ header .song_side .popular_artist .h4{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 25px;
+    font-family: 'AvantGarde Bold', Arial, sans-serif;
+    color: #FF4D00;
 }
 
 header .song_side .popular_artist .h4 i{
