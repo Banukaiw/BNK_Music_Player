@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    import Records from "./team.json";
+</head>
+
+<body>
+    <h1>Music Player</h1>
+    <div id="song-list"></div>
+    <script src="song.js"></script>
+
+
+    <div>
+        Records.map((record) => {
+        return (
+        <div>
+
+            <div>
+                <img src={record.image}></img>
+
+                <br></br>
+            </div>
+
+            <div class={styles.product}>
+                <p>{record.name}</p>
+                <p>
+                    {record.description}
+                </p>
+                <p>
+                    <span>{record.position}</span>
+                </p>
+
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://facebook.com/">
+                                <FacebookIcon></FacebookIcon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+
+                                ></TwitterIcon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/">
+                                <GitHubIcon></GitHubIcon>
+                            </a>
+                        </li>
+                        <li class={styles.socialitem}>
+                            <a href="https://lk.linkedin.com/">
+                                <LinkedInIcon></LinkedInIcon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <br></br>
+            </div>
+
+        </div>
+        );
+        })}
+    </div>
+</body>
+
+</html>
